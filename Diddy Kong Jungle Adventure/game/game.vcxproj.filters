@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="level1.txt" />
+    <Text Include="level2.txt" />
+    <Text Include="level3.txt" />
+    <Text Include="Debug\game.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="sounds\walk.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="sounds\battle1music.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="sounds\Blast1.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="sounds\bounce.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="sounds\click.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="sounds\collect.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="sounds\cratebreak.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="sounds\crumbling.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="sounds\jump.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="sounds\menuMusic.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="sounds\throw.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="images\ARIAL.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\background.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\bannana.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\crate.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\diddyclimbl.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\diddyclimbr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\diddyjumpl.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\diddyjumpr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\diddyrunl.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\diddyrunr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\diddystandl(old).png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\diddystandl.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\diddystandr(old).png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\diddystandr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\floor.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\gate.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\gate_neg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\key.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\key_neg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\Loss.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\monkey.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\platform1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\player.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\reallyshortplatform.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\shortplatform.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\skull.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\skull20.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\skull20_neg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\spikes.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\StartScreen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\treegate(old).png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\treegate.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\vine.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\vine2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\vshortplatform.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\winScreen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug\vc142.idb" />
+    <None Include="Debug\vc142.pdb" />
+    <None Include="Debug\platform.tlog\CL.command.1.tlog" />
+    <None Include="Debug\platform.tlog\platform.lastbuildstate" />
+    <None Include="Debug\platform.tlog\unsuccessfulbuild" />
+  </ItemGroup>
+</Project>

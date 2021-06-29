@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C70540F2-CACF-4373-9653-5729EF14E979}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>game</RootNamespace>
+    <ProjectName>platform</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\gfc\sdl\include;..\..\gfc\gfc\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\gfc\sdl\lib;..\..\gfc\gfc\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\gfc\sdl\include;..\..\gfc\gfc\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\gfc\sdl\lib;..\..\gfc\gfc\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>gfcd.lib;SDL.lib;SDLmain.lib;sdl_GFX.lib;SDL_image.lib;SDL_mixer.lib;SDL_net.lib;SDL_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>gfc.lib;SDL.lib;SDLmain.lib;sdl_GFX.lib;SDL_image.lib;SDL_mixer.lib;SDL_net.lib;SDL_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyGame.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Vector3D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Debug\game.log" />
+    <Text Include="level1.txt" />
+    <Text Include="level2.txt" />
+    <Text Include="level3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="sounds\battle1music.wav" />
+    <Media Include="sounds\Blast1.wav" />
+    <Media Include="sounds\bounce.wav" />
+    <Media Include="sounds\click.wav" />
+    <Media Include="sounds\collect.wav" />
+    <Media Include="sounds\cratebreak.wav" />
+    <Media Include="sounds\crumbling.wav" />
+    <Media Include="sounds\jump.wav" />
+    <Media Include="sounds\menuMusic.wav" />
+    <Media Include="sounds\throw.wav" />
+    <Media Include="sounds\walk.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="images\ARIAL.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\background.bmp" />
+    <Image Include="images\bannana.png" />
+    <Image Include="images\crate.png" />
+    <Image Include="images\diddyclimbl.png" />
+    <Image Include="images\diddyclimbr.png" />
+    <Image Include="images\diddyjumpl.png" />
+    <Image Include="images\diddyjumpr.png" />
+    <Image Include="images\diddyrunl.png" />
+    <Image Include="images\diddyrunr.png" />
+    <Image Include="images\diddystandl(old).png" />
+    <Image Include="images\diddystandl.png" />
+    <Image Include="images\diddystandr(old).png" />
+    <Image Include="images\diddystandr.png" />
+    <Image Include="images\floor.png" />
+    <Image Include="images\gate.png" />
+    <Image Include="images\gate_neg.png" />
+    <Image Include="images\key.png" />
+    <Image Include="images\key_neg.png" />
+    <Image Include="images\Loss.bmp" />
+    <Image Include="images\monkey.png" />
+    <Image Include="images\platform1.png" />
+    <Image Include="images\player.png" />
+    <Image Include="images\reallyshortplatform.png" />
+    <Image Include="images\shortplatform.png" />
+    <Image Include="images\skull.png" />
+    <Image Include="images\skull20.png" />
+    <Image Include="images\skull20_neg.png" />
+    <Image Include="images\spikes.png" />
+    <Image Include="images\StartScreen.bmp" />
+    <Image Include="images\treegate(old).png" />
+    <Image Include="images\treegate.png" />
+    <Image Include="images\vine.png" />
+    <Image Include="images\vine2.png" />
+    <Image Include="images\vshortplatform.png" />
+    <Image Include="images\winScreen.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug\platform.tlog\CL.command.1.tlog" />
+    <None Include="Debug\platform.tlog\platform.lastbuildstate" />
+    <None Include="Debug\platform.tlog\unsuccessfulbuild" />
+    <None Include="Debug\vc142.idb" />
+    <None Include="Debug\vc142.pdb" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
